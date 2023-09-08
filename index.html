@@ -1,0 +1,596 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+
+    <!--bootstrap harus tetep di atas file css-->
+    <link rel="stylesheet" href="css/custom.css" />
+    <link
+      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="bg-header mb-5">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="assets/logo.png"
+                alt=""
+                class="d-inline-block align-text-top"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                <!--ms itu margin kiri-->
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tentang.html">Tentang</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kontak.html">Kontak</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="lainnya.html">Lainnya</a>
+                </li>
+              </ul>
+              <form class="form-inline d-sm-block d-md-none">
+                <a
+                  type="button"
+                  class="btn btn-white my-2 my-sm-0"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalLogin"
+                  >Masuk</a
+                >
+              </form>
+              <!-- Desktop Button -->
+              <form class="form-inline ms-2 mt-3 d-none d-md-block vl">
+                <a
+                  type="button"
+                  class="btn btn-white btn-navbar-right ms-3 text-medium"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalLogin"
+                >
+                  Masuk
+                </a>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Modal Login -->
+      <div
+        class="modal fade"
+        id="modalLogin"
+        tabindex="-1"
+        aria-labelledby="modalLoginLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 text-bold" id="modalLoginLabel">
+                SELAMAT DATANG DI RUKO IMPIAN
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Alamat Email</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword">Kata Sandi</label>
+              </div>
+              <div
+                class="text-center"
+                style="margin-top: 30px; margin-bottom: 30px"
+              >
+                <a
+                  href="index-2.html"
+                  class="btn btn-green"
+                  style="padding: 8px 45px"
+                  >Masuk</a
+                >
+              </div>
+              <!-- <div class="google-btn">
+              <div class="google-icon-wrapper">
+                <img class="google-icon"
+                  src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" />
+              </div>
+              <p class="btn-text"><b>Sign in with google</b></p>
+            </div> -->
+
+              <div class="text-center d-grid gap-3">
+                <button class="btn btn-google">
+                  <img
+                    class="google-icon me-2"
+                    src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                  />Login dengan Google
+                </button>
+                <button class="btn btn-apple">
+                  <img
+                    class="google-icon me-2"
+                    src="assets/ic_apple.png"
+                    width="24"
+                  />Login dengan Apple
+                </button>
+              </div>
+
+              <div class="d-flex mt-3 mb-4">
+                <div class="form-check me-auto">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="ingatSaya"
+                  />
+                  <label class="form-check-label" for="ingatSaya">
+                    Ingat Saya
+                  </label>
+                </div>
+                <div class="forgot-password">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-primary text-reguler"
+                    >Lupa Password?</a
+                  >
+                </div>
+              </div>
+              <p class="mb-4 text-light text-black">
+                Saya setuju untuk Rumah's Persyaratan Layanan dan Kebijakan
+                Privasi termasuk pengumpulan, penggunaan, dan pengungkapan
+                informasi pribadi saya.
+              </p>
+              <div class="text-center">
+                <p class="text-medium text-black">
+                  Belum punya akun?
+                  <a
+                    type="button"
+                    data-bs-target="#modalDaftar"
+                    data-bs-toggle="modal"
+                    class="text-decoration-none text-green text-semi-bold"
+                    >Daftar</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Daftar-->
+      <div
+        class="modal fade"
+        id="modalDaftar"
+        tabindex="-1"
+        aria-labelledby="modalDaftarLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 text-bold" id="modalDaftarLabel">
+                SELAMAT DATANG DI RUKO IMPIAN
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col">
+                  <div class="form-floating mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="Nama Depan"
+                    />
+                    <label for="floatingInput">Nama Depan</label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-floating mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="Nama Belakang"
+                    />
+                    <label for="floatingInput">Nama Belakang</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword">Password</label>
+              </div>
+
+              <div class="form-check me-auto mb-3 mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="bersedia"
+                />
+                <label class="form-check-label" for="bersedia">
+                  Bersedia menerima notifikasi ruko melalui Email
+                </label>
+              </div>
+              <div class="form-check me-auto mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="setuju"
+                />
+                <label class="form-check-label" for="setuju">
+                  Menyetujui Syarat dan Ketentuan di RukoImpian.com
+                </label>
+              </div>
+
+              <div
+                class="text-center"
+                style="margin-top: 30px; margin-bottom: 30px"
+              >
+                <button class="btn btn-green" style="padding: 8px 45px">
+                  Daftar
+                </button>
+              </div>
+
+              <div class="text-center">
+                <p class="text-medium text-black">
+                  Sudah punya akun?
+                  <a
+                    type="button"
+                    data-bs-target="#modalLogin"
+                    data-bs-toggle="modal"
+                    class="text-decoration-none text-green text-semi-bold"
+                    >Masuk</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pb-5" style="margin-top: 100px">
+        <div class="container">
+          <div class="row">
+            <div class="col-7 align-self-center px-4">
+              <!--align self center biar column yg kiri sejajar tengah sama column yang kanan-->
+              <h1 class="mb-4 text-white text-semi-bold">
+                <!--margin bottom 4-->
+                Membantu Kamu Menemukan<br />Ruko Impianmu.
+              </h1>
+              <p class="mb-5 text-white">
+                Ruko Impian hadir untuk membantu menemukan atau mengiklankan
+                ruko terbaikmu. Sewa dan mengiklankan ruko menjadi lebih aman
+                dengan sumber terpercaya.
+              </p>
+              <div class="btn-header">
+                <form>
+                  <a class="btn btn-cta" href="hasil-cari.html" role="button"
+                    >Iklankan Ruko</a
+                  >
+                </form>
+              </div>
+            </div>
+            <!--bagian column kiri-->
+            <div class="col-5 d-none d-sm-block">
+              <!--bagian column kanan, Hidden only on xs-->
+              <img
+                width=""
+                src="assets/illustration-home.jpeg"
+                class="banner-img"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container layanan" style="margin-bottom: 125px">
+      <div class="text-center mb-5">
+        <h1 class="text-green text-bold">Layanan Kami</h1>
+        <p class="">Ruko impian hadir untuk solusi bisnis kamu</p>
+      </div>
+
+      <div class="row align-items-center mb-5">
+        <div class="col-12 col-md-4">
+          <img src="assets/ellips.png" alt="ellips" width="300" />
+        </div>
+        <div class="col-12 col-md-8">
+          <h5 class="text-semi-bold">Chat Via Web</h5>
+          <p class="mb-4">
+            Jangan khawatir jika anda berada diluar Jakarta. Kami memberikan<br />
+            layanan berupa gratis survei ruko setiap kali anda melakukan<br />
+            perjanjian sewa ruko di Ruko Impian.
+          </p>
+          <button class="btn btn-more">Selengkapnya</button>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-12 col-md-8">
+          <h5 class="text-semi-bold">Iklan Ruko Gratis</h5>
+          <p class="mb-4">
+            Memberikan anda kemudahan dalam mengiklankan ruko yang anda <br />
+            miliki. hanya dengan mendaftar kemudian mengisi detail ruko, ruko
+            <br />
+            anda sudah siap untuk di iklankan.
+          </p>
+          <button class="btn btn-more">Selengkapnya</button>
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="assets/iklan-ruko.png" alt="iklan" width="380" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container ruko-populer" style="margin-bottom: 125px">
+      <div class="">
+        <p class="text-semi-bold mb-0">Ruko Populer</p>
+        <p>rukoimpian.com</p>
+      </div>
+      <div class="row">
+        <div class="col mb-3">
+          <img src="assets/images/1.jpg" alt="1" width="278" />
+        </div>
+        <div class="col mb-3">
+          <img src="assets/images/2.jpg" alt="2" width="278" />
+        </div>
+        <div class="col mb-3">
+          <img src="assets/images/3.jpg" alt="3" width="278" />
+        </div>
+        <div class="col mb-3">
+          <img src="assets/images/4.jpg" alt="4" width="278" />
+        </div>
+      </div>
+    </div>
+
+    <div class="advantage" style="margin-bottom: 168px">
+      <div
+        id="myCarousel"
+        class="carousel slide container mb-3"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner w-100">
+          <div class="carousel-item active">
+            <div class="col-md-10 me-3">
+              <div class="card-advantage radius-10">
+                <div class="row" style="padding: 60px">
+                  <div class="col-4">
+                    <img
+                      src="assets/images/ilustration-advantage-1.jpg"
+                      width="234"
+                    />
+                  </div>
+                  <div class="col-8">
+                    <h2 class="text-white mb-3" style="font-weight: 300">
+                      Memudahkan Anda Dalam <br />
+                      Mendapatkan Informasi
+                    </h2>
+                    <p class="text-white text-reguler">
+                      Membantu anda mencari ruko impian khususnya di wilayah
+                      Jakarta Pusat. Memudahkan anda dalam meninjau kualitas dan
+                      fasilitas ruko dengan di bantu oleh tim survei gratis yang
+                      kami sediakan supaya anda lebih yakin dalam memilih ruko.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-10 me-3">
+              <div class="card-advantage radius-10">
+                <div class="row" style="padding: 60px">
+                  <div class="col-4">
+                    <img
+                      src="assets/images/ilustration-advantage-1.jpg"
+                      width="234"
+                    />
+                  </div>
+                  <div class="col-8">
+                    <h2 class="text-white mb-3" style="font-weight: 300">
+                      Memudahkan Anda Dalam <br />
+                      Mengiklankan Ruko
+                    </h2>
+                    <p class="text-white text-reguler">
+                      Membantu anda mengiklankan ruko dengan fitur gratis iklan.
+                      Sehingga anda bisa dengan mudah mengiklankan ruko anda
+                      kapan saja dan dimana saja.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="text-center">
+        <button class="btn btn-more">
+          Selengkapnya<i class="fa fa-angle-down ms-2"></i>
+        </button>
+      </div>
+    </div>
+
+    <footer
+      class="section-footer mt-5 mb-4 border-top"
+      style="background-color: #277868"
+    >
+      <div class="container" style="padding-top: 90px; padding-bottom: 40px">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 col-lg-5">
+                <h3 class="text-bold mb-3 text-white">Rukoimpian.com</h3>
+                <p class="text-white text-light">
+                  Rukoimpian.com adalah situs teknologi penyewaan <br />
+                  dan pengiklnan properti ruko di Indonesia yang telah <br />
+                  melayani jutaan orang sejak 2022. Hadir untuk membuat <br />
+                  sewa menyewa rukomenjadi mudah dengan pelayanan, <br />
+                  keamanan dan kenyamanan.
+                </p>
+              </div>
+              <div class="col-12 col-lg-7">
+                <div class="row">
+                  <div class="col-12 col-lg-4">
+                    <h5 class="text-white mb-3">Perusahaan</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><a href="#">Tentang Kami</a></li>
+                      <li class="mb-2"><a href="#">Kontak Kami</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    <h5 class="text-white mb-3">Dukungan</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><a href="#">Iklankan Ruko Anda</a></li>
+                      <li class="mb-2"><a href="#">Kebijakan Privasi</a></li>
+                      <li class="mb-2"><a href="#">Syarat & Ketentuan</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    <h5 class="text-white mb-3">Hubungi Kami</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                        <a href="#"
+                          ><i class="fa fa-envelope me-2"></i
+                          >rukoimpian@gmail.com</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#"
+                          ><i class="fa fa-phone me-2"></i>+62 8934283</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div
+          class="row border-top justify-content-center align-items-center pt-4 pb-4"
+        >
+          <div class="col-auto text-white font-weight-light">
+            © 2022 Rukoimpian.com (PT Ruko Jakarta Pusat) merupakan bagian dari
+            Property Group.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

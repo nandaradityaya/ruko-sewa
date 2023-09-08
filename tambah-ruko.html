@@ -1,0 +1,419 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tambah Ruko</title>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+
+  <!--bootstrap harus tetep di atas file css-->
+  <link rel="stylesheet" href="css/custom.css" />
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <header class="mb-5">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/logo-green.png" alt="" class="d-inline-block align-text-top" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+              <!--ms itu margin kiri-->
+              <li class="nav-item">
+                <a class="nav-link text-green" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-green" href="tentang.html">Tentang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-green" href="kontak.html">Kontak</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-green" href="lainnya.html">Lainnya</a>
+              </li>
+            </ul>
+            <div class="icon me-auto">
+              <a class="me-2" type="button" data-bs-toggle="modal" data-bs-target="#modalChat">
+                <img src="assets/icon/chat-green.svg" alt="chat" width="24">
+              </a>
+              <a href="ruko-favorite.html">
+                <img src="assets/icon/star-green.svg" alt="star" width="24">
+              </a>
+            </div>
+            <a type="button" class="profile d-flex align-items-center text-decoration-none" onclick="toggleMenu()">
+              <p class="text-green text-medium me-2 mt-3">Sofyan</p>
+              <img src="assets/nanda.jpg" alt="profile" class="avatar-navbar">
+            </a>
+            <div class="sub-menu-wrap" id="subMenu">
+              <div class="sub-menu">
+
+                <a href="profile.html" class="sub-menu-link">
+                  <i class="fa fa-user"></i>
+                  <p>Profile</p>
+                  <span>></span>
+                </a>
+
+                <a href="ruko-saya.html" class="sub-menu-link">
+                  <i class="fa fa-home"></i>
+                  <p>Ruko Saya</p>
+                  <span>></span>
+                </a>
+
+                <a href="" class="sub-menu-link">
+                  <i class="fa fa-bars"></i>
+                  <p>Syarat & Ketentuan</p>
+                  <span>></span>
+                </a>
+                <a href="kontak.html" class="sub-menu-link">
+                  <i class="fa fa-phone"></i>
+                  <p>Hubungi Kami</p>
+                  <span>></span>
+                </a>
+
+                <a href="" class="sub-menu-link">
+                  <i class="fa fa-sign-out"></i>
+                  <p>Keluar</p>
+                  <span>></span>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalChat" tabindex="-1" aria-labelledby="modalChatLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-8 my-chat">
+                <div class="d-flex align-items-center">
+                  <img src="assets/toko.jpg" alt="toko" class="profile-toko me-2">
+                  <div class="status mt-3">
+                    <h6 class="text-semi-bold mb-0">Ruko Abadi Tanah Abang</h6>
+                    <p class="text-secondary" style="font-size: 14px;">Online</p>
+                  </div>
+                </div>
+                <hr class="mt-0">
+                <div class="d-flex justify-content-end align-items-center mb-4">
+                  <div class="card p-3 me-2 radius-10">
+                    <p>Hai, Selamat Siang.. <br>
+                      Saya ingin menanyakan status ruko abadi, <br>
+                      apakah mash tersedia?</p>
+                  </div>
+                  <img src="assets/nanda.jpg" alt="toko" class="profile-toko me-2">
+                </div>
+                <div class="d-flex align-items-center mb-4">
+                  <img src="assets/toko.jpg" alt="toko" class="profile-toko me-2">
+                  <div class="card p-3 me-2 radius-10">
+                    <p>Hai, Selamat Siang.. <br>
+                      Saya ingin menanyakan status ruko abadi, <br>
+                      apakah mash tersedia?</p>
+                  </div>
+                </div>
+
+                <div class="message-input">
+                  <input type="text" id="message" placeholder="Masukan pesan...">
+                  <button id="send-button"><img src="assets/icon/send.svg" alt="Send"></button>
+                </div>
+
+              </div>
+              <div class="col-4 room-chat">
+                <div class="text-center mb-3">
+                  <img src="assets/nanda.jpg" alt="profile" class="my-avatar-chat mb-3">
+                  <h6 class="text-semi-bold mb-3">Sofyan</h6>
+                  <input class="form-control radius-10" type="text" placeholder="Cari Nama"
+                    aria-label="default input example">
+                </div>
+                <div class="d-flex align-items-center">
+                  <img src="assets/toko.jpg" alt="toko" class="profile-toko me-2">
+                  <div class="status mt-3">
+                    <h6 class="text-semi-bold mb-0">Ruko Abadi Tanah Abang</h6>
+                    <p class="text-secondary" style="font-size: 14px;">30 Menit lalu</p>
+                  </div>
+                </div>
+                <hr class="mt-0">
+
+                <div class="d-flex align-items-center">
+                  <img src="assets/toko.jpg" alt="toko" class="profile-toko me-2">
+                  <div class="status mt-3">
+                    <h6 class="text-semi-bold mb-0">Ruko Jannah</h6>
+                    <p class="text-secondary" style="font-size: 14px;">30 Menit lalu</p>
+                  </div>
+                </div>
+                <hr class="mt-0">
+
+                <div class="d-flex align-items-center">
+                  <img src="assets/toko.jpg" alt="toko" class="profile-toko me-2">
+                  <div class="status mt-3">
+                    <h6 class="text-semi-bold mb-0">Ruko Paradise</h6>
+                    <p class="text-secondary" style="font-size: 14px;">30 Menit lalu</p>
+                  </div>
+                </div>
+                <hr class="mt-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="breadcrumb" style="background-color: #277868;">
+      <div class="container pt-3">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-white">Home</a></li>
+            <li class="breadcrumb-item text-white active" aria-current="page">Tambah Ruko</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="picture container mb-5">
+    <div class="d-flex justify-content-center mb-3">
+      <img class="card-transform" src="assets/images/tambah-ruko.png" alt="tambah-ruko" width="758">
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="upload card-transform me-4">
+        <div class="image-container" id="imageContainer1">
+          <img id="uploadedImage1" src="#" alt="Uploaded Image" width="235">
+        </div>
+        <div class="card-upload" id="cardContainer1">
+          <label class="upload-label" for="formFile1">
+            <input class="form-control" type="file" id="formFile1">
+            <i class="fa fa-plus"></i>
+          </label>
+        </div>
+      </div>
+      <div class="upload card-transform me-4">
+        <div class="image-container" id="imageContainer2">
+          <img id="uploadedImage2" src="#" alt="Uploaded Image" width="235">
+        </div>
+        <div class="card-upload" id="cardContainer2">
+          <label class="upload-label" for="formFile2">
+            <input class="form-control" type="file" id="formFile2">
+            <i class="fa fa-plus"></i>
+          </label>
+        </div>
+      </div>
+      <div class="upload card-transform me-4">
+        <div class="image-container" id="imageContainer3">
+          <img id="uploadedImage3" src="#" alt="Uploaded Image" width="235">
+        </div>
+        <div class="card-upload" id="cardContainer3">
+          <label class="upload-label" for="formFile3">
+            <input class="form-control" type="file" id="formFile3">
+            <i class="fa fa-plus"></i>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <p class="mb-4">Dimohon untuk mengisi data dibawah sesuai dengan spesifikasi ruko yang ada. Pastikan alamat
+      dan nomor pemilik ruko telah sesuai agar memudahkan calon penyewa menghubungi anda.</p>
+
+    <div class="form">
+      <div class="mb-3">
+        <label for="nama" class="form-label">Nama<span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="nama" placeholder="Nama">
+      </div>
+
+      <div class="mb-3">
+        <label for="lokasi" class="form-label">Lokasi Ruko<span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="lokasi" placeholder="Lokasi">
+      </div>
+
+      <h6 class="text-semi-bold mt-5 mb-4">Spesifikasi Ruko</h6>
+      <div class="row mb-3">
+        <div class="col-12 col-md-6 mb-3">
+          <label for="luasTanah" class="form-label">Luas Tanah</label>
+          <div class="input-group mb-3">
+            <input id="luasTanah" type="text" class="form-control" placeholder="Luas tanah" aria-label="luasTanah"
+              aria-describedby="luasTanah">
+            <span class="input-group-text" id="luasTanah">m²</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+          <label for="luasBangunan" class="form-label">Luas bangunan</label>
+          <div class="input-group mb-3">
+            <input id="luasBangunan" type="text" class="form-control" placeholder="Luas bangunan"
+              aria-label="luasBangunan" aria-describedby="luasBangunan">
+            <span class="input-group-text" id="luasBangunan">m²</span>
+          </div>
+        </div>
+        <div class="col-6 mb-3">
+          <label for="jumlahKamar" class="form-label">Jumlah Kamar</label>
+          <input type="number" class="form-control" id="jumlahKamar" placeholder="Jumlah kamar">
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+          <label for="jumlahKamarMandi" class="form-label">Jumlah Kamar Mandi</label>
+          <input type="number" class="form-control" id="jumlahKamarMandi" placeholder="Jumlah kamar mandi">
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+          <label for="sertifikat" class="form-label">Sertifikat</label>
+          <input type="text" class="form-control" id="sertifikat" placeholder="Sertifikat">
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+          <label for="periodeSewa" class="form-label">Periode Sewa</label>
+          <input type="text" class="form-control" id="periodeSewa" placeholder="Periode sewa">
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+          <label for="dayaListrik" class="form-label">Daya Listrik</label>
+          <div class="input-group mb-3">
+            <input id="dayaListrik" type="text" class="form-control" placeholder="Daya listrik" aria-label="dayaListrik"
+              aria-describedby="dayaListrik">
+            <span class="input-group-text" id="dayaListrik">VA</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+          <label for="umurBangunan" class="form-label">Umur Bangunan</label>
+          <input type="number" class="form-control" id="umurBangunan" placeholder="Umur bangunan">
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+          <label for="lahanParkir" class="form-label">Lahan Parkir</label>
+          <input type="text" class="form-control" id="lahanParkir" placeholder="ex: 10m x 15m">
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+          <label for="jumlahLantai" class="form-label">Jumlah Lantai</label>
+          <input type="number" class="form-control" id="jumlahLantai" placeholder="Jumlah lantai">
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+          <label for="kondisiBangunan" class="form-label">Kondisi Bangunan</label>
+          <input type="text" class="form-control" id="kondisiBangunan" placeholder="Kondisi bangunan">
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+          <label for="posisiRuko" class="form-label">Posisi Ruko</label>
+          <input type="text" class="form-control" id="posisiRuko" placeholder="Posisi ruko">
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+          <label for="nomorTelp" class="form-label">Nomor Telepon</label>
+          <input type="number" class="form-control" id="nomorTelp" placeholder="Nomor telepon">
+        </div>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="syaratKetentuan">
+        <label class="form-check-label" for="syaratKetentuan">
+          Saya menyetujui syarat dan ketentuan yang berlaku di Ruko Impian.
+        </label>
+      </div>
+      <div class="text-center">
+        <button type="button" class="btn btn-green mt-5 mb-5" data-bs-toggle="modal"
+          data-bs-target="#modalSubmitRuko">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalSubmitRuko" tabindex="-1" aria-labelledby="modalSubmitRukoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h5 class="text-center">Sedang Proses Verifikasi</h5>
+          <p class="text-center text-secondary">Mohon tunggu, ruko anda sedang dalam proses verifikasi oleh admin kami.
+          </p>
+          <div class="text-center">
+            <a href="ruko-saya.html" class="btn btn-green">Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <footer class="section-footer mt-5 mb-4 border-top" style="background-color: #277868;">
+    <div class="container" style="padding-top: 90px; padding-bottom: 40px;">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 col-lg-5">
+              <h3 class="text-bold mb-3 text-white">Rukoimpian.com </h3>
+              <p class="text-white text-light">Rukoimpian.com adalah situs teknologi penyewaan <br>
+                dan pengiklnan properti ruko di Indonesia yang telah <br>
+                melayani jutaan orang sejak 2022. Hadir untuk membuat <br>
+                sewa menyewa rukomenjadi mudah dengan pelayanan, <br>
+                keamanan dan kenyamanan.</p>
+            </div>
+            <div class="col-12 col-lg-7">
+              <div class="row">
+                <div class="col-12 col-lg-4">
+                  <h5 class="text-white mb-3">Perusahaan</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#">Tentang Kami</a></li>
+                    <li class="mb-2"><a href="#">Kontak Kami</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <h5 class="text-white mb-3">Dukungan</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#">Iklankan Ruko Anda</a></li>
+                    <li class="mb-2"><a href="#">Kebijakan Privasi</a></li>
+                    <li class="mb-2"><a href="#">Syarat & Ketentuan</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <h5 class="text-white mb-3">Hubungi Kami</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#"><i class="fa fa-envelope me-2"></i>rukoimpian@gmail.com</a>
+                    </li>
+                    <li class="mb-2"><a href="#"><i class="fa fa-phone me-2"></i>+62 8934283</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row border-top justify-content-center align-items-center pt-4 pb-4">
+        <div class="col-auto text-white font-weight-light">
+          © 2022 Rukoimpian.com (PT Ruko Jakarta Pusat) merupakan bagian dari Property Group.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>

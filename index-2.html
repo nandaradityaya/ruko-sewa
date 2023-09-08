@@ -1,0 +1,508 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index 2</title>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+
+  <!--bootstrap harus tetep di atas file css-->
+  <link rel="stylesheet" href="css/custom.css" />
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <header class="bg-header mb-5">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/logo.png" alt="" class="d-inline-block align-text-top" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+              <!--ms itu margin kiri-->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tentang.html">Tentang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kontak.html">Kontak</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="lainnya.html">Lainnya</a>
+              </li>
+            </ul>
+            <div class="icon me-auto">
+              <a class="me-2" type="button" data-bs-toggle="modal" data-bs-target="#modalChat">
+                <img src="assets/icon/chat.svg" alt="chat" width="24">
+              </a>
+              <a href="ruko-favorite.html">
+                <img src="assets/icon/star.svg" alt="star" width="24">
+              </a>
+            </div>
+            <a type="button" class="profile d-flex align-items-center text-decoration-none" onclick="toggleMenu()">
+              <p class="text-white text-medium me-2 mt-3">Sofyan</p>
+              <img src="assets/nanda.jpg" alt="profile" class="avatar-navbar">
+            </a>
+            <div class="sub-menu-wrap" id="subMenu">
+              <div class="sub-menu">
+
+                <a href="profile.html" class="sub-menu-link">
+                  <i class="fa fa-user"></i>
+                  <p>Profile</p>
+                  <span>></span>
+                </a>
+
+                <a href="ruko-saya.html" class="sub-menu-link">
+                  <i class="fa fa-home"></i>
+                  <p>Ruko Saya</p>
+                  <span>></span>
+                </a>
+
+                <a href="" class="sub-menu-link">
+                  <i class="fa fa-bars"></i>
+                  <p>Syarat & Ketentuan</p>
+                  <span>></span>
+                </a>
+                <a href="kontak.html" class="sub-menu-link">
+                  <i class="fa fa-phone"></i>
+                  <p>Hubungi Kami</p>
+                  <span>></span>
+                </a>
+
+                <a href="" class="sub-menu-link">
+                  <i class="fa fa-sign-out"></i>
+                  <p>Keluar</p>
+                  <span>></span>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalChat" tabindex="-1" aria-labelledby="modalChatLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-8 my-chat">
+                <div class="d-flex align-items-center">
+                  <img src="assets/toko.jpg" alt="toko" class="profile-toko me-2">
+                  <div class="status mt-3">
+                    <h6 class="text-semi-bold mb-0">Ruko Abadi Tanah Abang</h6>
+                    <p class="text-secondary" style="font-size: 14px;">Online</p>
+                  </div>
+                </div>
+                <hr class="mt-0">
+                <div class="d-flex justify-content-end align-items-center mb-4">
+                  <div class="card p-3 me-2 radius-10">
+                    <p>Hai, Selamat Siang.. <br>
+                      Saya ingin menanyakan status ruko abadi, <br>
+                      apakah mash tersedia?</p>
+                  </div>
+                  <img src="assets/nanda.jpg" alt="toko" class="profile-toko me-2">
+                </div>
+                <div class="d-flex align-items-center mb-4">
+                  <img src="assets/toko.jpg" alt="toko" class="profile-toko me-2">
+                  <div class="card p-3 me-2 radius-10">
+                    <p>Hai, Selamat Siang.. <br>
+                      Saya ingin menanyakan status ruko abadi, <br>
+                      apakah mash tersedia?</p>
+                  </div>
+                </div>
+
+                <div class="message-input">
+                  <input type="text" id="message" placeholder="Masukan pesan...">
+                  <button id="send-button"><img src="assets/icon/send.svg" alt="Send"></button>
+                </div>
+
+              </div>
+              <div class="col-4 room-chat">
+                <div class="text-center mb-3">
+                  <img src="assets/nanda.jpg" alt="profile" class="my-avatar-chat mb-3">
+                  <h6 class="text-semi-bold mb-3">Sofyan</h6>
+                  <input class="form-control radius-10" type="text" placeholder="Cari Nama"
+                    aria-label="default input example">
+                </div>
+                <div class="d-flex align-items-center">
+                  <img src="assets/toko.jpg" alt="toko" class="profile-toko me-2">
+                  <div class="status mt-3">
+                    <h6 class="text-semi-bold mb-0">Ruko Abadi Tanah Abang</h6>
+                    <p class="text-secondary" style="font-size: 14px;">30 Menit lalu</p>
+                  </div>
+                </div>
+                <hr class="mt-0">
+
+                <div class="d-flex align-items-center">
+                  <img src="assets/toko.jpg" alt="toko" class="profile-toko me-2">
+                  <div class="status mt-3">
+                    <h6 class="text-semi-bold mb-0">Ruko Jannah</h6>
+                    <p class="text-secondary" style="font-size: 14px;">30 Menit lalu</p>
+                  </div>
+                </div>
+                <hr class="mt-0">
+
+                <div class="d-flex align-items-center">
+                  <img src="assets/toko.jpg" alt="toko" class="profile-toko me-2">
+                  <div class="status mt-3">
+                    <h6 class="text-semi-bold mb-0">Ruko Paradise</h6>
+                    <p class="text-secondary" style="font-size: 14px;">30 Menit lalu</p>
+                  </div>
+                </div>
+                <hr class="mt-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="pb-5" style="margin-top: 100px">
+      <div class="container">
+        <h1 class="text-white mb-5">
+          Kami Akan Membantu Menemukan <br> Ruko Terbaik Untuk Anda
+        </h1>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-8 mb-3">
+            <div class="row pt-3 align-items-center radius-10" style="background-color: #0F6E5C;">
+              <div class="col-12 col-md-6 mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Cari lokasi, nama ruko, dll ">
+                  <label for="floatingInput">Cari lokasi, nama ruko, dll </label>
+                </div>
+              </div>
+              <div class="col-12 col-md-2 mb-3">
+                <div class="dropdown-harga">
+                  <button class="dropdown-btn-harga" onclick="toggleCard()">Harga <i
+                      class="fa fa-angle-down ms-2"></i></button>
+                  <div class="dropdown-content-harga" id="dropdown-content">
+                    <div class="card-harga row">
+                      <div class="col-12 col-md-6">
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1">Rp</span>
+                          <input type="number" class="form-control" placeholder="Minimal" aria-label="Minimal"
+                            aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1">Rp</span>
+                          <input type="number" class="form-control" placeholder="Maksimal" aria-label="Maksimal"
+                            aria-describedby="basic-addon2">
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <button class="btn btn-reset me-2">Reset</button>
+                        <button class="btn btn-green" onclick="applyFilter()">Tampilkan (50)</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-2 mb-3">
+                <div class="dropdown-tanah">
+                  <button class="dropdown-btn-tanah" onclick="toggleCardTanah()">Tanah <i
+                      class="fa fa-angle-down ms-2"></i></button>
+                  <div class="dropdown-content-tanah" id="dropdown-content-tanah">
+                    <div class="card-tanah row">
+                      <div class="col-12 col-md-6">
+                        <div class="input-group mb-3">
+                          <input type="number" class="form-control" placeholder="Minimal" aria-label="Minimal"
+                            aria-describedby="basic-addon1">
+                          <span class="input-group-text" id="basic-addon1">m</span>
+
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="input-group mb-3">
+                          <input type="number" class="form-control" placeholder="Maksimal" aria-label="Maksimal"
+                            aria-describedby="basic-addon2">
+                          <span class="input-group-text" id="basic-addon1">m</span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <button class="btn btn-reset me-2">Reset</button>
+                        <button class="btn btn-green" onclick="applyFilterTanah()">Tampilkan (50)</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-2 mb-3">
+                <a href="#" class="pt-3 pb-3 radius-10"
+                  style="background-color: #fff; padding-left: 32px; padding-right: 32px;"><i class="fa fa-search"
+                    style="color: #1d594d;"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <a href="" class="p-3 radius-10 text-decoration-none text-green" style="background-color: #fff;"><i
+                class="fa fa-filter me-2" style="color: #1d594d;"></i>Filter</a>
+          </div>
+        </div>
+
+        <a class="btn btn-cta mt-4" href="hasil-cari.html" role="button">Iklankan Ruko</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="recomendation container">
+    <div class="title mb-3">
+      <h3 class="text-green text-semi-bold">Rekomendasi Dari Kami</h3>
+      <h6 class="text-green">Rukoimpian.com</h6>
+    </div>
+
+    <div class="row justify-content-center mb-4">
+      <a href="spesifikasi.html" class="text-decoration-none">
+        <div class="card p-0 card-recomendation card-transform" style="width: 38.875rem;">
+          <img src="assets/images/rekomen1.jpg" class="card-img-top" alt="rekomen1">
+          <a href="#" class="text-decoration-none">
+            <img class="add-favorite" src="assets/icon/star.svg" alt="star" width="24">
+          </a>
+          <h4 class="text-white price-card text-semi-bold">IDR 200.000.000</h4>
+          <div class="card-body">
+            <h5 class="text-white text-semi-bold">Ruko Kebon Kacang Jaya</h5>
+            <p class="text-white">Ruko Kebon Kacang Jaya adalah salah satu ruko sebuah ruko yang terletak di wilayah
+              Tanah
+              Abang Jakarta Pusat </p>
+            <p class="text-white text-semi-bold">LT : 100 m² LB : 245 m²</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="row">
+      <div id="myCarousel" class="carousel slide container mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner w-100">
+          <div class="carousel-item active">
+            <div class="col-md-4 me-3">
+              <a href="#" class="text-decoration-none">
+                <div class="card p-0 card-recomendation card-transform">
+                  <img src="assets/images/rekomen3.jpg" class="card-img-top" alt="rekomen1">
+                  <a href="#" class="text-decoration-none">
+                    <img class="add-favorite" src="assets/icon/star.svg" alt="star" width="24">
+                  </a>
+                  <div class="card-body">
+                    <h5 class="text-white text-semi-bold">Mulai dari Rp. 135.000.000</h5>
+                    <h5 class="text-white text-semi-bold">Ruko Auri</h5>
+                    <p class="text-white">Tanah Tinggi, Jakarta Pusat</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-4 me-3">
+              <a href="#" class="text-decoration-none">
+                <div class="card p-0 card-recomendation card-transform">
+                  <img src="assets/images/rekomen3.jpg" class="card-img-top" alt="rekomen1">
+                  <a href="#" class="text-decoration-none">
+                    <img class="add-favorite" src="assets/icon/star.svg" alt="star" width="24">
+                  </a>
+                  <div class="card-body">
+                    <h5 class="text-white text-semi-bold">Mulai dari Rp. 180.000.000</h5>
+                    <h5 class="text-white text-semi-bold">Ruko Auri</h5>
+                    <p class="text-white">Tanah Tinggi, Jakarta Pusat</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-4 me-3">
+              <a href="#" class="text-decoration-none">
+                <div class="card p-0 card-recomendation card-transform">
+                  <img src="assets/images/rekomen3.jpg" class="card-img-top" alt="rekomen1">
+                  <a href="#" class="text-decoration-none">
+                    <img class="add-favorite" src="assets/icon/star.svg" alt="star" width="24">
+                  </a>
+                  <div class="card-body">
+                    <h5 class="text-white text-semi-bold">Mulai dari Rp. 150.000.000</h5>
+                    <h5 class="text-white text-semi-bold">Ruko Auri</h5>
+                    <p class="text-white">Tanah Tinggi, Jakarta Pusat</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="why-us mt-5 mb-5" style="background-color: #277868;">
+    <div class="container pt-4 pb-4">
+      <h5 class="text-white mb-4">Kenapa harus di rukoimpian.com</h5>
+      <div class="row">
+        <div class="col-12 col-md-4 mb-3">
+          <div class="card card-transform text-center p-4">
+            <div class="justify-content-center mb-3">
+              <img src="assets/icon/safety.svg" alt="safety" width="64">
+            </div>
+            <h5 class="text-green text-semi-bold mb-3">Sewa Ruko Aman & Mudah</h5>
+            <p class="text-green"><span class="text-semi-bold">Ruko Impian</span>, sebagai situs properti <br>
+              terpercaya
+              siap membantu <br> menemukan ruko impian anda.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-3">
+          <div class="card card-transform text-center p-4">
+            <div class="justify-content-center mb-3">
+              <img src="assets/icon/run.svg" alt="safety" width="64">
+            </div>
+            <h5 class="text-green text-semi-bold mb-3">Sewa Ruko Cepat</h5>
+            <p class="text-green"><span class="text-semi-bold">Ruko Impian</span>, sewa ruko lebih mudah <br> dan cepat
+              dengan fitur dan layanan <br> terbaik.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-3">
+          <div class="card card-transform text-center p-4">
+            <div class="justify-content-center mb-3">
+              <img src="assets/icon/piagam.svg" alt="safety" width="64">
+            </div>
+            <h5 class="text-green text-semi-bold mb-3">Mitra Properti Ruko Terbaik</h5>
+            <p class="text-green"><span class="text-semi-bold">Ruko Impian</span>, adalah situs properti <br>
+              ruko terbesar dan terpercaya yang telah <br>
+              melayani jutaan masyarakat Indonesia.</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <button class="btn btn-white">Selengkapnya</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="location-strategis container">
+    <h5 class="text-black text-semi-bold">Lokasi Strategis Cocok Untuk Segala Jenis Bisnis</h5>
+    <p>Kami siap membantu anda menemukan ruko sesuai dengan kebutuhan <br>
+      hanya di rukoimpian.com</p>
+
+    <div class="row">
+      <div class="col-12 col-md-5 mb-3">
+        <div class="card card-location">
+          <img src="assets/images/lokasi.png" class="card-img-top" alt="lokasi1" height="274">
+          <div class="card-body">
+            <h5 class="text-green text-semi-bold">Mulai Dari Rp. 150.000.000</h5>
+            <p class="text-secondary">Jakarta Pusat</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-7">
+        <div class="row text-center">
+          <div class="col-12 col-md-6">
+            <img src="assets/images/lokasi-2.jpg" alt="lokasi-2" width="330" class="mb-4">
+            <img src="assets/images/lokasi-4.jpg" alt="lokasi-4" width="330" class="mb-4">
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="assets/images/lokasi-3.jpg" alt="lokasi-3" width="330" class="mb-4">
+            <img src="assets/images/lokasi-5.jpg" alt="lokasi-5" width="330" class="mb-4">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="section-footer mt-5 mb-4 border-top" style="background-color: #277868;">
+    <div class="container" style="padding-top: 90px; padding-bottom: 40px;">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 col-lg-5">
+              <h3 class="text-bold mb-3 text-white">Rukoimpian.com </h3>
+              <p class="text-white text-light">Rukoimpian.com adalah situs teknologi penyewaan <br>
+                dan pengiklnan properti ruko di Indonesia yang telah <br>
+                melayani jutaan orang sejak 2022. Hadir untuk membuat <br>
+                sewa menyewa rukomenjadi mudah dengan pelayanan, <br>
+                keamanan dan kenyamanan.</p>
+            </div>
+            <div class="col-12 col-lg-7">
+              <div class="row">
+                <div class="col-12 col-lg-4">
+                  <h5 class="text-white mb-3">Perusahaan</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#">Tentang Kami</a></li>
+                    <li class="mb-2"><a href="#">Kontak Kami</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <h5 class="text-white mb-3">Dukungan</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#">Iklankan Ruko Anda</a></li>
+                    <li class="mb-2"><a href="#">Kebijakan Privasi</a></li>
+                    <li class="mb-2"><a href="#">Syarat & Ketentuan</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <h5 class="text-white mb-3">Hubungi Kami</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#"><i class="fa fa-envelope me-2"></i>rukoimpian@gmail.com</a>
+                    </li>
+                    <li class="mb-2"><a href="#"><i class="fa fa-phone me-2"></i>+62 8934283</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row border-top justify-content-center align-items-center pt-4 pb-4">
+        <div class="col-auto text-white font-weight-light">
+          © 2022 Rukoimpian.com (PT Ruko Jakarta Pusat) merupakan bagian dari Property Group.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
